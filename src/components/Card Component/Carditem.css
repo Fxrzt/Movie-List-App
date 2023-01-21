@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root{
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #ED8F03;
+    --color-primary-light:#FFB75E;
+    /* --color-primary: #4db5ff; */
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 1rem;
+    height: auto;
+    width: 400px;
+    background-color: var(--color-bg-variant);
+    color: var(--color-white);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.description h1{
+    border-radius: 5px;
+    font-size: 1.25rem;
+    border: 2px solid var(--color-white);
+    margin: 0.50rem 0;
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-indent: 18px;
+    padding: 0.4rem;
+}
+
+.card-image{
+    border: 1px solid var(--color-white);
+}
+
+.card-image img{
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.description p{
+    line-height: 1;
+    white-space: wrap;
+    padding: 0.25rem;
+    text-indent: 20px;
+    overflow: hidden;
+    height: 100px;
+    text-overflow: ellipsis;
+    /* border: 1px solid salmon; */
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.card-rate{
+    /* border: 1px solid salmon; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-rate p{
+    margin-left: 0.5rem;
+}
+
+.card-rate button{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
